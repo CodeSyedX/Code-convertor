@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6f86d6, #48c6ef);
+    color: #333;
+}
+
+/* Main Container Styling */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Controls Section Styling */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    width: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.dropdown:focus {
+    border-color: #48c6ef;
+    outline: none;
+}
+
+/* Button Styling */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background: #48c6ef;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #6f86d6;
+    transform: scale(1.05);
+}
+
+/* Text Areas Styling */
+.text-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+textarea {
+    width: 100%;
+    max-width: 48%;
+    height: 200px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    resize: vertical;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #48c6ef;
+    box-shadow: 0 0 10px rgba(72, 198, 239, 0.5);
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    textarea {
+        max-width: 100%;
+        height: 150px;
+    }
+
+    .text-areas {
+        gap: 10px;
+    }
+}
+
+/* Keyframes for Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

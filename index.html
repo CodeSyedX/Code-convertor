@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Code Converter</h1>
+        <div class="controls">
+            <select id="languageSelect" class="dropdown">
+                <option value="" disabled selected>Select Language</option>
+                <option value="java">Java</option>
+                <option value="javascript">JavaScript</option>
+                <option value="csharp">C#</option>
+                <option value="php">PHP</option>
+                <option value="ruby">Ruby</option>
+                <option value="go">Go</option>
+                <option value="swift">Swift</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="typescript">TypeScript</option>
+                <option value="html">HTML</option>
+            </select>
+            <button id="convertButton" class="btn btn-primary">Convert</button>
+        </div>
+        <div class="text-areas">
+            <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+            <textarea id="codeOutput" placeholder="Converted code will appear here..." readonly></textarea>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
